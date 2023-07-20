@@ -1,16 +1,5 @@
-/**
-* Template Name: NiceAdmin
-* Updated: May 30 2023 with Bootstrap v5.3.0
-* Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
-
-  /**
-   * Easy selector helper function
-   */
   const select = (el, all = false) => {
     el = el.trim()
     if (all) {
@@ -19,10 +8,6 @@
       return document.querySelector(el)
     }
   }
-
-  /**
-   * Easy event listener function
-   */
   const on = (type, el, listener, all = false) => {
     if (all) {
       select(el, all).forEach(e => e.addEventListener(type, listener))
@@ -30,41 +15,14 @@
       select(el, all).addEventListener(type, listener)
     }
   }
-
-  /**
-   * Easy on scroll event listener 
-   */
   const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener)
-  }
-
-  /**
-   * Sidebar toggle
-   */
-  if (select('.toggle-sidebar-btn')) {
-    on('click', '.toggle-sidebar-btn', function(e) {
-      select('body').classList.toggle('toggle-sidebar')
-    })
-  }
-    if (select('.toggle-sidebar2-btn')) {
-        on('click', '.toggle-sidebar2-btn', function (e) {
-            select('body').classList.toggle('toggle-sidebar2')
-        })
+       el.addEventListener('scroll', listener)
     }
-
-
-  /**
-   * Search bar toggle
-   */
   if (select('.search-bar-toggle')) {
     on('click', '.search-bar-toggle', function(e) {
       select('.search-bar').classList.toggle('search-bar-show')
     })
   }
-
-  /**
-   * Navbar links active state on scroll
-   */
   let navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
     let position = window.scrollY + 200
@@ -81,10 +39,6 @@
   }
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
-
-  /**
-   * Toggle .header-scrolled class to #header when page is scrolled
-   */
   let selectHeader = select('#header')
   if (selectHeader) {
     const headerScrolled = () => {
@@ -97,10 +51,6 @@
     window.addEventListener('load', headerScrolled)
     onscroll(document, headerScrolled)
   }
-
-  /**
-   * Back to top button
-   */
   let backtotop = select('.back-to-top')
   if (backtotop) {
     const toggleBacktotop = () => {
@@ -113,30 +63,20 @@
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
   }
-
-  /**
-   * Initiate tooltips
-   */
   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
   var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
   })
-
-  /**
-   * Initiate quill editors
-   */
   if (select('.quill-editor-default')) {
     new Quill('.quill-editor-default', {
       theme: 'snow'
     });
   }
-
   if (select('.quill-editor-bubble')) {
     new Quill('.quill-editor-bubble', {
       theme: 'bubble'
     });
   }
-
   if (select('.quill-editor-full')) {
     new Quill(".quill-editor-full", {
       modules: {
@@ -184,19 +124,9 @@
       theme: "snow"
     });
   }
-
-  /**
-   * Initiate TinyMCE Editor
-   */
   const useDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const isSmallScreen = window.matchMedia('(max-width: 1023.5px)').matches;
-
-
-  /**
-   * Initiate Bootstrap validation check
-   */
   var needsValidation = document.querySelectorAll('.needs-validation')
-
   Array.prototype.slice.call(needsValidation)
     .forEach(function(form) {
       form.addEventListener('submit', function(event) {
@@ -208,18 +138,10 @@
         form.classList.add('was-validated')
       }, false)
     })
-
-  /**
-   * Initiate Datatables
-   */
   const datatables = select('.datatable', true)
   datatables.forEach(datatable => {
     new simpleDatatables.DataTable(datatable);
   })
-
-  /**
-   * Autoresize echart charts
-   */
   const mainContainer = select('#main');
   if (mainContainer) {
     setTimeout(() => {
@@ -230,5 +152,4 @@
       }).observe(mainContainer);
     }, 200);
   }
-
 })();

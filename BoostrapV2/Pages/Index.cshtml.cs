@@ -5,16 +5,12 @@ namespace BoostrapV2.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
-
-        public IndexModel(ILogger<IndexModel> logger)
+        public string? FirstName  { get; set; }
+        public IndexModel()
         {
-            _logger = logger;
         }
-
         public void OnGet()
         {
-
         }
     }
 }
