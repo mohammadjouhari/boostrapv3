@@ -42,11 +42,6 @@
         <ul class="sidebar-nav">
             <li>
                 <a>
-                    <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3pZ-gZavZ--zmy5TluKQHw-5aKDXYlrnnbQ&usqp=CAU" />
-                </a>
-            </li>
-            <li>
-                <a>
                     <i class="bi- bi-calendar-event "></i>
                     <span>الأحداث</span>
                 </a>
@@ -67,7 +62,7 @@
             </div>
             <div class="search-bar d-flex align-items-center">
                 <input type="text" class="search-click bi bi-search" name="" placeholder="search here..." />
-                <i class="bi bi-search"></i>
+                <i class="fa fa-search" aria-hidden="true"></i>
             </div>
         </header>
         <section id="demos">
@@ -86,29 +81,31 @@
         <br />
     </section>
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-xl-6">
-                <div class="image-box  mb-4">
+        <div class="row  d-flex align-items-center justify-content-center">
+            <div class="col-md-4">
+                <div class="image-box">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd_zyhGa5YLyInHrluRbD_q6R6kSLrGn1k3Q&usqp=CAU" alt="">
                     <div class="body">
                         <h5 class="font-weight-bold my-2">مهرجان الوثبة</h5>
                         <p class="small">December 10, 2017</p>
                     </div>
-                    <div class="footer">
-                        <button type="button" class="btn btn-danger">اضافة خبر</button>
-                    </div>
-
                 </div>
             </div>
-            <div class="col-md-6 col-xl-6">
-                <div class="image-box   mb-4">
+            <div class="col-md-4">
+                <div class="image-box">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd_zyhGa5YLyInHrluRbD_q6R6kSLrGn1k3Q&usqp=CAU" alt="">
                     <div class="body">
                         <h5 class="font-weight-bold my-2">مهرجان الوثبة</h5>
                         <p class="small">December 10, 2017</p>
                     </div>
-                    <div class="footer">
-                        <button type="button" class="btn btn-danger">اضافة خبر</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd_zyhGa5YLyInHrluRbD_q6R6kSLrGn1k3Q&usqp=CAU" alt="">
+                    <div class="body">
+                        <h5 class="font-weight-bold my-2">مهرجان الوثبة</h5>
+                        <p class="small">December 10, 2017</p>
                     </div>
                 </div>
             </div>
@@ -119,9 +116,7 @@
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
     <script>
         $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 15,
-            navigation: true,
+            loop: false,
             nav: true,
             responsive: {
                 0: {
@@ -144,7 +139,6 @@
                     $('.sidebar').css('left', '-500px');
                     $('html').css('height', 'auto');
                     $('html').css('overflow', 'scroll');
-
                 }
                 return;
             }
@@ -156,10 +150,6 @@
                 $('.sidebar').css('left', '-300px');
             }
         });
-        function test(e) {
-            sessionStorage.setItem("A", 6);
-            localStorage.setItem("A", 6);
-        }
         $(document).ready(function () {
             $('.sidebar').css('height', $(document).height());
         });
