@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6SJgOlZQZvLCjqjnSOTn8kp+oamlzFNTs/fR2kPIjBw=",
+  "Hash": "yMf9ASB1AVoelRTexWAHuuF7kVcQQd9cIQLw/1ztni8=",
   "Source": "BoostrapV2",
   "BasePath": "_content/BoostrapV2",
   "Mode": "Default",
@@ -440,23 +440,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\slides-3.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\m_243\\OneDrive\\Desktop\\microsoft documentation\\.net core\\BoostrapV2\\BoostrapV2\\wwwroot\\assets\\js\\main.js",
-      "SourceId": "BoostrapV2",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\m_243\\OneDrive\\Desktop\\microsoft documentation\\.net core\\BoostrapV2\\BoostrapV2\\wwwroot\\",
-      "BasePath": "_content/BoostrapV2",
-      "RelativePath": "assets/js/main.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\js\\main.js"
     },
     {
       "Identity": "C:\\Users\\m_243\\OneDrive\\Desktop\\microsoft documentation\\.net core\\BoostrapV2\\BoostrapV2\\wwwroot\\assets\\scss\\Readme.txt",

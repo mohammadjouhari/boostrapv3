@@ -35,6 +35,9 @@
         body {
               font-family: 'Sofia', serif;
         }
+        .owl-carousel owl-theme owl-loaded owl-drag {
+            background-color: blue !important;
+        }
     </style>
 </head>
 <body>
@@ -61,9 +64,10 @@
                 <i class="bi bi-list toggle-sidebar-btn"></i>
             </div>
             <div class="search-bar d-flex align-items-center">
-                <input type="text" class="search-click bi bi-search" name="" placeholder="search here..." />
+                <input type="text" class="search-click" name="" placeholder="search here..." />
                 <i class="fa fa-search" aria-hidden="true"></i>
             </div>
+
         </header>
         <section id="demos">
             <div class="owl-carousel owl-theme">
@@ -81,7 +85,7 @@
         <br />
     </section>
     <div class="container">
-        <div class="row  d-flex align-items-center justify-content-center">
+        <div class="row d-flex align-items-center justify-content-center">
             <div class="col-md-4">
                 <div class="image-box">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd_zyhGa5YLyInHrluRbD_q6R6kSLrGn1k3Q&usqp=CAU" alt="">
@@ -125,6 +129,10 @@
             }
         });
         $('.toggle-sidebar-btn').click(function (e) {
+            $(document).ready(function () {
+                $('.sidebar').css('height', $(document).height());
+            });
+            console.log(e);
             if (window.innerWidth <= 500) {
                 $('.sidebar').css('top', '121px;');
                 $('.sidebar').css('height', 'auto');
