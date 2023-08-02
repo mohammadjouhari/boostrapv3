@@ -55,7 +55,7 @@
                     <span>الأخبار</span>
                 </a>
             </li>
-           
+
         </ul>
     </aside>
     <section class="main" id="main">
@@ -69,7 +69,7 @@
                 <div class="clear"></div>
                 <button type="button" class="btn btn-primary btnSearch">
                     <i class="fa fa-search" aria-hidden="true"></i>
-           
+
                 </button>
             </div>
         </header>
@@ -87,40 +87,72 @@
             </div>
         </section>
         <br />
-    </section>
-    <div class="container">
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-md-4">
-                <div class="image-box">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd_zyhGa5YLyInHrluRbD_q6R6kSLrGn1k3Q&usqp=CAU" alt="">
-                    <div class="body">
-                        <h5 class="font-weight-bold my-2">مهرجان الوثبة</h5>
-                        <p class="small">December 10, 2017</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="image-box">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd_zyhGa5YLyInHrluRbD_q6R6kSLrGn1k3Q&usqp=CAU" alt="">
+                        <div class="body">
+                            <h5 class="font-weight-bold my-2">مهرجان الوثبة</h5>
+                            <p class="small">December 10, 2017</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="image-box">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd_zyhGa5YLyInHrluRbD_q6R6kSLrGn1k3Q&usqp=CAU" alt="">
-                    <div class="body">
-                        <h5 class="font-weight-bold my-2">مهرجان الوثبة</h5>
-                        <p class="small">December 10, 2017</p>
+                <div class="col-md-4">
+                    <div class="image-box">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd_zyhGa5YLyInHrluRbD_q6R6kSLrGn1k3Q&usqp=CAU" alt="">
+                        <div class="body">
+                            <h5 class="font-weight-bold my-2">مهرجان الوثبة</h5>
+                            <p class="small">December 10, 2017</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="image-box">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd_zyhGa5YLyInHrluRbD_q6R6kSLrGn1k3Q&usqp=CAU" alt="">
-                    <div class="body">
-                        <h5 class="font-weight-bold my-2">مهرجان الوثبة</h5>
-                        <p class="small">December 10, 2017</p>
+                <div class="col-md-4">
+                    <div class="image-box">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd_zyhGa5YLyInHrluRbD_q6R6kSLrGn1k3Q&usqp=CAU" alt="">
+                        <div class="body">
+                            <h5 class="font-weight-bold my-2">مهرجان الوثبة</h5>
+                            <p class="small">December 10, 2017</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <br />
+        <div class="container">
+            <div class="row">
+                <footer>
+                    <div class="row footer-content">
+                        <div class="col xl5 l6 m6 s12 box">
+                            <div class="row">
+                                <div class="info">
+                                    <b>Contact US</b>
+                                    <p>Amman</p>
+                                    <p>Jordan</p>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <p>Phone</p>
+                                            <p class="ltr">00962790475885</p>
+                                        </div>
+                                        <div class="col s4">
+                                            <p>Email</p>
+                                            <p>Mohammad.Jouhari@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="copyright">
+                        Copy Writes Mohammad Jouhari
+                    </p>
+                </footer>
+            </div>
+        </div>
+        
+    </section>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js?v=@DateTime.Now"></script>
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
     <script>
         $('.owl-carousel').owlCarousel({
@@ -135,6 +167,7 @@
             }
         });
         $('.toggle-sidebar-btn').click(function (e) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
             $(document).ready(function () {
                 $('.sidebar').css('height', $(document).height());
             });

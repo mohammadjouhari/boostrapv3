@@ -7,6 +7,7 @@ namespace BoostrapV2.Pages
         public string? FirstName  { get; set; }
         public IndexModel()
         {
+
         }
         public void OnGet()
         {
