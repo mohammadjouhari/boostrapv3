@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace BoostrapV2.Pages
 {
@@ -11,6 +10,7 @@ namespace BoostrapV2.Pages
         }
         public void OnGet()
         {
+            //S;
         }
     }
 }

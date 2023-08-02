@@ -4,6 +4,7 @@ body {
     margin-top: 20px;
     background-color: #212529;
 }
+
 @media (max-width: 500px) {
     .sidebar {
         width: 100% !important;
@@ -44,7 +45,7 @@ body {
         position: fixed;
     }
     .search-bar {
-        margin-left: -100px !important;
+        margin-left: -202px !important;
     }
 }
 @media (max-width: 900px) {
@@ -52,6 +53,7 @@ body {
         height: 300px !important;
     }
 }
+
 #main {
     margin-top: 45px;
 }
@@ -71,8 +73,10 @@ body {
     height: 30%;
     width: 30%;
 }       
+
 .search-bar {
     margin-left: -94px;
+    position:relative;
 }
 .search-click {
     border: 1px solid #ccc;
@@ -91,7 +95,7 @@ body {
     top: 60px;
     left: 0;
     bottom: 0;
-    width: 300px;
+    width: 180px;
     height: 100%;
     z-index: 996;
     padding: 20px;
@@ -118,18 +122,20 @@ body {
 .sidebar-nav li a i {
                 margin-right: 10px;
 }
-#demos .owl-carousel .item {
+
+ #demos .owl-carousel .item {
     padding: 1rem;
     margin: auto;
     overflow: hidden;
     height:900px;
 }
-#demos .owl-carousel .item img {
+ #demos .owl-carousel .item img {
         margin: auto;
         width: 100%;
         height: 100%;
         object-fit:contain;
     }
+
 .image-box {
     background-color: bisque;
 }
@@ -140,9 +146,14 @@ body {
 .image-box .body {
    padding: 15px;
    text-align: center;
-}
-h3 {
+}  
+
+ h3 {
     text-align: center;
 }
-
-/*ss*/
+.btnSearch {
+    position: absolute;
+    right: 0px;
+    height: 30px;
+    border-bottom-right-radius: 16px;
+}
